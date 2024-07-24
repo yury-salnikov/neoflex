@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e150a2e4-6f5e-4ead-b095-f631e2421922</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>etl.py</StartupFile>
+    <StartupFile>etl_f101.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,41 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="conn.py" />
     <Compile Include="etl.py" />
+    <Compile Include="etl_f101.py" />
+    <Compile Include="table_logs.py" />
+    <Compile Include="table.py" />
+    <Compile Include="table_account.py" />
+    <Compile Include="table_balance.py" />
+    <Compile Include="table_currency.py" />
+    <Compile Include="table_exchange_rate.py" />
+    <Compile Include="table_ledger_account.py" />
+    <Compile Include="table_posting.py" />
+    <Compile Include="vtable_account_balance.py" />
+    <Compile Include="vtable_account_turnover.py" />
+    <Compile Include="vtable_f101.py" />
+    <Compile Include="vtable_f101_v1.py" />
+    <Compile Include="vtable_f101_v2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sql\" />
+    <Folder Include="video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sql\etl.sql" />
+    <Content Include="sql\initdb.sql" />
+    <Content Include="sql\logs.sql" />
+    <Content Include="sql\v1_f.sql" />
+    <Content Include="sql\v1_q.sql" />
+    <Content Include="sql\v2_f.sql" />
+    <Content Include="sql\v2_q.sql" />
+    <Content Include="sql\v3_f.sql" />
+    <Content Include="sql\v3_q.sql" />
+    <Content Include="video\1.1.txt" />
+    <Content Include="video\1.2.txt" />
+    <Content Include="video\1.3.txt" />
+    <Content Include="video\1.4.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
